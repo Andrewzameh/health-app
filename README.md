@@ -1,13 +1,5 @@
-# The SvelteKit Enterprise Stack
-
-Time is money and setting up a project can be time consuming when you could be working on the business logic instead.
-
-![SvelteKit Enterprise Stack](https://user-images.githubusercontent.com/38083522/226189777-4ecda836-5d1f-4819-ba11-2d2fe09d1838.png)
-
 ## The Stack
-
-Every part of the **SvelteKit Enterprise Stack** is optimized to go blazingly fast to please stakeholders and uses:
-
+c
 - [Prisma](https://www.prisma.io/) for the database
 - [Lucia](https://lucia-auth.com/) for authentication
 - [Tailwind](https://tailwindcss.com/) for styling with automatic class sorting and [Skeleton UI](https://www.skeleton.dev/) for the UI components
@@ -74,12 +66,16 @@ If you're using a host like Vercel you have to enter the environment variables i
 
 ```shell
 # Prisma
-DATABASE_URL="file:./dev.db"
+DATABASE_URL="file:./dev.sqlite"
 
 # Stripe
 PUBLIC_STRIPE_KEY="pk_test_1234"
 SECRET_STRIPE_KEY="sk_test_1234"
 STRIPE_WEBHOOK_SECRET="we_1234"
+
+#Statics
+PUBLIC_APP_NAME="Medical History"
+PUBLIC_APP_ASSETS="med"
 ```
 
 ### 📜 Create the database and generate the Prisma client from your Prisma schema
